@@ -144,12 +144,15 @@ body{
     display: inline;
     padding: 10px;
     margin: 10px 10px;
+
 }
 .icon > a{
     color: white;
     text-decoration: none;
 }
 .fa:hover{
+    transition: 0.3s all ease;
+    transform: rotateX(360deg);
     color: #2098d1;
 }
 .icon{
