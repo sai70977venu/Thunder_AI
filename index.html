@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 <body>
-    <div class="container-fluid" style="background:#345ab5;">
+    <div class="container-fluid" style="background:#345ab5;" id="home">
         <div class= "container ml-auto">
             <div class="d-flex flex-row-reverse" style="padding: 3px;">
                 <a href="#" class="quick-icons"><i class="fas fa-phone" style="font-size: 10px;"></i>&nbsp;+919985599388</a>
@@ -34,21 +34,21 @@
         <div class="container">
             <a class="navbar-brand" href="#" style="font-weight:lighter;color: white;font-size:1.7em; text-shadow: 2px 2px 2px #fff;"><img src="images/1755315.png" class="img-fluid" width="60" height="60" alt="">&nbsp;&nbsp;&nbsp;Thunder Solutions</a>
             <button class="navbar-toggler right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <i class="fa fa-bars" aria-hidden="true" style="margin: 0; padding: 0;"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ml-auto" id="main-navbar">
                 <li class="nav-item active">
-                  <a class="nav-link hvr-underline-from-center" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link hvr-underline-from-center" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link hvr-underline-from-center" href="#">Portfolio</a>
+                  <a class="nav-link hvr-underline-from-center" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link hvr-underline-from-center" href="#">About Us</a>
+                  <a class="nav-link hvr-underline-from-center" href="#portfolio">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link hvr-underline-from-center" href="#">Contact</a>
+                  <a class="nav-link hvr-underline-from-center" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -67,7 +67,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="services">
       <div class="row"  style="margin-top: 5em;margin-bottom: 3em;">
         <div class="col-md-8" style="text-align: center; padding-top: 1em;">
           <h1> Fraud Detection</h1>
@@ -106,155 +106,240 @@
       </div>
     </div>
     <hr> 
-    <div class="container-fluid">
-      <h1 style="display: inline-block; position: relative; left: 50%; transform: translateX(-50%); padding-bottom: 5px; border-bottom: 3px double #555;">Our Team</h1>
+    <div class="container-fluid" id="portfolio">
+      <h1 style="display: inline-block; position: relative; left: 50%; transform: translateX(-50%); padding-bottom: 5px; border-bottom: 3px solid #ccc;">Our Team</h1>
       <div class="container">
         <div class="row slider" style="margin-top: 3em;">
             <div class="col-md-4 box">
                 <div class="imgbtn">
-                  <img src="images/card.jpeg" alt="" class="img-fluid" style=" border-radius:10px;width: 100%; height: 100%;overflow:hidden; object-fit: fill;">
-                  <div class="card-details">
-                    <h3 style="display: block;padding:0.3em; border-bottom:1px solid white;">Sai Venu</h3>
-                    <!-- <hr style="border:2px solid white;"> -->
-                    <p style="font-weight:lighter;">Machine Learning Engineer1</p>
-                    <div class="icon">
-                      <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                      <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
-                      <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
-                      <span>&nbsp;...<a href="#" style="font-size: 10px;">Read More</a></span>
-                    </div>
-                  </div>
+                    <div class="card" style="position: relative;">
+                        <div class="card-header" style="text-align: center; background: rgba(7, 28, 79,0.9); font-size: 1.6em; font-weight: lighter;">O. Sai Venu</div>
+                        <div class="card-body" style="padding: 0;">
+                            <img src="images/card.jpeg" alt="" class="card-img" style="margin: 0;padding:0;">
+                            <div class="overlay">
+                                <h2>ML Engineer</h2>
+                                <span><p>at Google</p>
+                                  <p>Experience: 3 years
+                                    <br>Area: CNN's
+                                  </p></span>
+                                  <button type="button" class="btn btn-primary btn-sm">Read More</button>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="icon">
+                        <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                        <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+                        <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                        <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+                        <a href="#"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                      </div>
                 </div>
               </div>
               <div class="col-md-4 box">
                   <div class="imgbtn">
-                    <img src="images/kireeti.jpeg" alt="" class="img-fluid" style=" border-radius:10px;width: 100%;overflow:hidden;">
-                    <div class="card-details">
-                      <h3 style="display: block;padding:0.3em; border-bottom:1px solid white;">Sai Venu</h3>
-                      <!-- <hr style="border:2px solid white;"> -->
-                      <p style="font-weight:lighter;">Machine Learning Engineer2</p>
-                      <div class="icon">
-                        <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
-                        <span>&nbsp;...<a href="#" style="font-size: 10px;">Read More</a></span>
-                      </div>
-                    </div>
+                      <div class="card" style="position: relative;">
+                          <div class="card-header" style="text-align: center; background: rgba(7, 28, 79,0.9); font-size: 1.6em; font-weight: lighter;">R. Kireeti Kumar</div>
+                          <div class="card-body" style="padding: 0;">
+                              <img src="images/kireeti.jpeg" alt="" class="card-img" style="margin: 0;padding:0;">
+                              <div class="overlay">
+                                  <h2>ML Engineer</h2>
+                                  <span><p>at Google</p>
+                                      <p>Experience: 3 years
+                                          <br>Area: CNN's
+                                        </p></span>
+                                        <button type="button" class="btn btn-primary btn-sm">Read More</button>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="icon">
+                          <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                        </div>
                   </div>
               </div>
               <div class="col-md-4 box">
                   <div class="imgbtn">
-                    <img src="images/navneeth.jpeg" alt="" class="img-fluid" style=" border-radius:10px;width: 100%;overflow:hidden;">
-                    <div class="card-details">
-                      <h3 style="display: block;padding:0.3em; border-bottom:1px solid white;">Sai Venu</h3>
-                      <!-- <hr style="border:2px solid white;"> -->
-                      <p style="font-weight:lighter;">Machine Learning Engineer3</p>
-                      <div class="icon">
-                        <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
-                        <span>&nbsp;...<a href="#" style="font-size: 10px;">Read More</a></span>
-                      </div>
-                    </div>
+                      <div class="card" style="position: relative;">
+                          <div class="card-header" style="text-align: center; background: rgba(7, 28, 79,0.9); font-size: 1.6em; font-weight: lighter;">T. Navneeth</div>
+                          <div class="card-body" style="padding: 0;">
+                              <img src="images/navneeth.jpeg" alt="" class="card-img" style="margin: 0;padding:0;">
+                              <div class="overlay">
+                                  <h2>ML Engineer</h2>
+                                  <span><p>at Google</p>
+                                      <p>Experience: 3 years
+                                          <br>Area: CNN's
+                                      </p></span>
+                                      <button type="button" class="btn btn-primary btn-sm">Read More</button>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="icon">
+                          <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                        </div>
                   </div>
                 </div>
               <div class="col-md-4 box">
                   <div class="imgbtn">
-                    <img src="images/card.jpeg" alt="" class="img-fluid" style=" border-radius:10px;width: 100%;overflow:hidden;">
-                    <div class="card-details">
-                      <h3 style="display: block;padding:0.3em; border-bottom:1px solid white;">Sai Venu</h3>
-                      <!-- <hr style="border:2px solid white;"> -->
-                      <p style="font-weight:lighter;">Machine Learning Engineer4</p>
-                      <div class="icon">
-                        <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
-                        <span>&nbsp;...<a href="#" style="font-size: 10px;">Read More</a></span>
-                      </div>
-                    </div>
+                      <div class="card" style="position: relative;">
+                          <div class="card-header" style="text-align: center; background: rgba(7, 28, 79,0.9); font-size: 1.6em; font-weight: lighter;">O. Sai Venu</div>
+                          <div class="card-body" style="padding: 0;">
+                              <img src="images/card.jpeg" alt="" class="card-img" style="margin: 0;padding:0;">
+                              <div class="overlay">
+                                  <h2>ML Engineer</h2>
+                                  <span><p>at Google</p>
+                                      <p>Experience: 3 years
+                                          <br>Area: CNN's
+                                        </p></span>
+                                        <button type="button" class="btn btn-primary btn-sm">Read More</button>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="icon">
+                          <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                        </div>
                   </div>
                 </div>
               <div class="col-md-4 box">
                   <div class="imgbtn">
-                    <img src="images/kireeti.jpeg" alt="" class="img-fluid" style=" border-radius:10px;width: 100%;overflow:hidden;">
-                    <div class="card-details">
-                      <h3 style="display: block;padding:0.3em; border-bottom:1px solid white;">Sai Venu</h3>
-                      <p style="font-weight:lighter;">Machine Learning Engineer5</p>
-                      <div class="icon">
-                        <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
-                        <span>&nbsp;...<a href="#" style="font-size: 10px;">Read More</a></span>
-                      </div>
-                    </div>
+                      <div class="card" style="position: relative;">
+                          <div class="card-header" style="text-align: center; background: rgba(7, 28, 79,0.9); font-size: 1.6em; font-weight: lighter;">R. Kireeti Kumar</div>
+                          <div class="card-body" style="padding: 0;">
+                              <img src="images/kireeti.jpeg" alt="" class="card-img" style="margin: 0;padding:0;">
+                              <div class="overlay">
+                                  <h2>ML Engineer</h2>
+                                  <span><p>at Google</p>
+                                      <p>Experience: 3 years
+                                          <br>Area: CNN's
+                                        </p></span>
+                                        <button type="button" class="btn btn-primary btn-sm">Read More</button>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="icon">
+                          <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                        </div>
                   </div>
                 </div>
               <div class="col-md-4 box">
                   <div class="imgbtn">
-                    <img src="images/navneeth.jpeg" alt="" class="img-fluid" style=" border-radius:10px;width: 100%;overflow:hidden;">
-                    <div class="card-details">
-                      <h3 style="display: block;padding:0.3em; border-bottom:1px solid white;">Sai Venu</h3>
-                      <!-- <hr style="border:2px solid white;"> -->
-                      <p style="font-weight:lighter;">Machine Learning Engineer6</p>
-                      <div class="icon">
-                        <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
-                        <span>&nbsp;...<a href="#" style="font-size: 10px;">Read More</a></span>
-                      </div>
-                    </div>
+                      <div class="card" style="position: relative;">
+                          <div class="card-header" style="text-align: center; background: rgba(7, 28, 79,0.9); font-size: 1.6em; font-weight: lighter;">T. Navneeth</div>
+                          <div class="card-body" style="padding: 0;">
+                              <img src="images/navneeth.jpeg" alt="" class="card-img" style="margin: 0;padding:0;">
+                              <div class="overlay">
+                                  <h2>ML Engineer</h2>
+                                  <span><p>at Google</p>
+                                      <p>Experience: 3 years
+                                          <br>Area: CNN's
+                                        </p></span>
+                                        <button type="button" class="btn btn-primary btn-sm">Read More</button>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="icon">
+                          <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                        </div>
                   </div>
                 </div>
               <div class="col-md-4 box">
                   <div class="imgbtn">
-                    <img src="images/card.jpeg" alt="" class="img-fluid" style=" border-radius:10px;width: 100%;overflow:hidden;">
-                    <div class="card-details">
-                      <h3 style="display: block;padding:0.3em; border-bottom:1px solid white;">Sai Venu</h3>
-                      <!-- <hr style="border:2px solid white;"> -->
-                      <p style="font-weight:lighter;">Machine Learning Engineer7</p>
-                      <div class="icon">
-                        <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
-                        <span>&nbsp;...<a href="#" style="font-size: 10px;">Read More</a></span>
-                      </div>
-                    </div>
+                      <div class="card" style="position: relative;">
+                          <div class="card-header" style="text-align: center; background: rgba(7, 28, 79,0.9); font-size: 1.6em; font-weight: lighter;">O. Sai Venu</div>
+                          <div class="card-body" style="padding: 0;">
+                              <img src="images/card.jpeg" alt="" class="card-img" style="margin: 0;padding:0;">
+                              <div class="overlay">
+                                  <h2>ML Engineer</h2>
+                                  <span><p>at Google</p>
+                                      <p>Experience: 3 years
+                                          <br>Area: CNN's
+                                        </p></span>
+                                        <button type="button" class="btn btn-primary btn-sm">Read More</button>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="icon">
+                          <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                        </div>
                   </div>
                 </div>
               <div class="col-md-4 box">
                   <div class="imgbtn">
-                    <img src="images/kireeti.jpeg" alt="" class="img-fluid" style=" border-radius:10px;width: 100%;overflow:hidden;">
-                    <div class="card-details">
-                      <h3 style="display: block;padding:0.3em; border-bottom:1px solid white;">Sai Venu</h3>
-                      <!-- <hr style="border:2px solid white;"> -->
-                      <p style="font-weight:lighter;">Machine Learning Engineer8</p>
-                      <div class="icon">
-                        <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
-                        <span>&nbsp;...<a href="#" style="font-size: 10px;">Read More</a></span>
-                      </div>
-                    </div>
+                      <div class="card" style="position: relative;">
+                          <div class="card-header" style="text-align: center; background: rgba(7, 28, 79,0.9); font-size: 1.6em; font-weight: lighter;">R. Kireeti Kumar</div>
+                          <div class="card-body" style="padding: 0;">
+                            <img src="images/kireeti.jpeg" alt="" class=" card-img" style="margin: 0;padding:0;">
+                            <div class="overlay">
+                                <h2>ML Engineer</h2>
+                                <span><p>at Google
+                                    <p>Experience: 3 years</p>
+                                        <br>Area: CNN's
+                                      </p></span>
+                                      <button type="button" class="btn btn-primary btn-sm">Read More</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="icon">
+                          <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+                          <a href="#"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                        </div>
                   </div>
                 </div>
               <div class="col-md-4 box">
-                  <div class="imgbtn">
-                    <img src="images/navneeth.jpeg" alt="" class="img-fluid" style=" border-radius:10px;width: 100%;overflow:hidden;">
-                    <div class="card-details">
-                      <h3 style="display: block;padding:0.3em; border-bottom:1px solid white;">Sai Venu</h3>
-                      <!-- <hr style="border:2px solid white;"> -->
-                      <p style="font-weight:lighter;">Machine Learning Engineer9</p>
-                      <div class="icon">
-                        <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
-                        <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
-                        <span>&nbsp;...<a href="#" style="font-size: 10px;">Read More</a></span>
-                      </div>
+                <div class="imgbtn">
+                  <div class="card" style="position: relative;">
+                    <div class="card-header" style="text-align: center; background: rgba(7, 28, 79,0.9); font-size: 1.6em; font-weight: lighter;">T. Navneeth</div>
+                    <div class="card-body" style="padding: 0;">
+                        <img src="images/navneeth.jpeg" alt="" class="card-img" style="margin: 0;padding:0;">
+                        <div class="overlay">
+                          <h2>ML Engineer</h2>
+                          <span><p>at Google</p>
+                              <p>Experience: 3 years
+                                  <br>Area: CNN's
+                                </p></span>
+                                <button type="button" class="btn btn-primary btn-sm">Read More</button>
+                        </div>
                     </div>
+                  </div>
+                  <div class="icon">
+                    <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                    <a href="#"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+                    <a href="#"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                    <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+                    <a href="#"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
                   </div>
                 </div>
               </div>
+            </div>
       </div>
+    </div>
+    <div class="container" id="contact">
+
     </div>
     <hr>
     <br>
@@ -297,6 +382,15 @@
               centerMode: true,
               centerPadding: '40px',
               slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 990,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 2
             }
           }
         ]
