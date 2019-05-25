@@ -4,9 +4,13 @@
 }
 
 html{
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
   }
 body{
+    margin-bottom: 0;
+    padding-bottom: 0;
     margin: 0;
     padding: 0;
     font-family:'Quicksand','Open Sans',serif;
@@ -218,4 +222,52 @@ body{
 .navbar-toggler:hover{
     background: rgba(red, green, blue, 0.9);
     opacity: 0.5;
+}
+#footer{
+    color:white;
+    background: black;
+    opacity:0.9;
+}
+#footer .container{
+    border:3px solid white;
+    margin-left: 5em;
+    margin-right: 5em;  
+}
+#footer .row{
+    margin: 2em;
+    padding: 4em;
+}
+.footer-block{
+    padding-left : 2em;
+    padding-right: 2em; 
+}
+.footer-heading{
+    font-weight: lighter;
+}
+.footer-links{
+    display: block;
+    padding: 3px;
+}
+.footer-links li{
+    display: block;
+    font-weight: 100;
+    padding: 5px;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: gray;
+}
+.footer-links li a:hover{
+    opacity: 0.5;
+}
+a.footer-icon{
+    text-decoration: none;
+    opacity: 0.7;
+}
+a.footer-icon:hover{
+    opacity: 1;
+}
+a.footer-icon .fa{
+    margin:0;
+    padding: 10px;
 }
